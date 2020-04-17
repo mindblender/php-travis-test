@@ -1,0 +1,15 @@
+{
+    "name": "mindblender/php-travis-test",
+    "description": "Test project for playing with Travis CI",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeff Sittler",
+            "email": "mindblender@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "codeception/codeception": "^4.1"
+    }
+}

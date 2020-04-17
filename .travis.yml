@@ -1,0 +1,19 @@
+language: php
+php:
+  - '7.4'
+
+cache:
+  directories:
+    - vendor
+    - $HOME/.composer/cache
+      
+install:
+  - composer install
+
+before_script:
+  # starting demo server
+  - 'php -S 127.0.0.1:8000 -t .'
+  - 'php codecept build'
+
+script:
+  - 'php codecept run acceptance'
